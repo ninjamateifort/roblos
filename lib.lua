@@ -858,7 +858,7 @@ function library:Init(key)
     end
 
     local title = library.title
-    key = key or Enum.KeyCode.RightAlt
+    key = Enum.Keycode.Semicolon
 
     local screen = Instance.new("ScreenGui")
     local edge = Instance.new("Frame")
