@@ -858,7 +858,7 @@ function library:Init(key)
     end
 
     local title = library.title
-    key = Enum.Keycode.Semicolon
+    key = key
 
     local screen = Instance.new("ScreenGui")
     local edge = Instance.new("Frame")
@@ -899,7 +899,7 @@ function library:Init(key)
     drag(edge, 0.04)
     local CanChangeVisibility = true
     UserInputService.InputBegan:Connect(function(input)
-        if CanChangeVisibility and input.KeyCode == key then
+        if CanChangeVisibility and input.KeyCode == Enum.KeyCode.Semicolon then
             edge.Visible = not edge.Visible
         end
     end)
